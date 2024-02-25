@@ -1,7 +1,7 @@
 import React from 'react'
 import "./App.css"
-import SingleAccordion from './assets/components/SingleAccordion'
-import MultiAccordion from './assets/components/MultiAccordion'
+import SingleAccordion from './components/SingleAccordion'
+import MultiAccordion from './components/MultiAccordion'
 
 const App = () => {
   return (
