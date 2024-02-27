@@ -1,23 +1,19 @@
 import React from 'react'
 import "./App.css"
-import SingleAccordion from './components/SingleAccordion'
-import MultiAccordion from './components/MultiAccordion'
+import SingleAccordion from './components/accordion/SingleAccordion'
+import MultiAccordion from './components/accordion/MultiAccordion'
+import Accordion from './components/accordion/Accordion'
 
 const App = () => {
   return (
-    <div className='h-screen flex flex-col md:flex-row items-center justify-between'>
-
-      <div className="md:flex-col">
-        <h1>Single Selection</h1>
-        <SingleAccordion />
+    <div className='flex-col'>
+      <div className='accordion flex-col justify-center'>
+        <h1 className='mb-4 font-bold'>Accordion</h1>
+        <Accordion />
+        <hr />
       </div>
-
-      <div className="md:flex-col ml-0 md:ml-4 mt-4 md:mt-0 mb-4">
-        <h1>Multiple Selection</h1>
-        <MultiAccordion />
-      </div>
-
     </div>
+
   )
 }
 
