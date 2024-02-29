@@ -4,6 +4,7 @@ import SingleAccordion from './components/accordion/SingleAccordion'
 import MultiAccordion from './components/accordion/MultiAccordion'
 import Accordion from './components/accordion/Accordion'
 import ColorGenerator from './components/color_generator/ColorGenerator'
+import StarRating from './components/star_rating/StarRating'
 
 const App = () => {
   return (
@@ -21,6 +22,11 @@ const App = () => {
       </div>
       <hr />
       
+      <div className="star-rating flex flex-col justify-center items-center">
+        <h1 className='mb-4 font-bold'>Star Rating</h1>
+        <StarRating />
+      </div>
+      <hr />
     </div>
 
   )
